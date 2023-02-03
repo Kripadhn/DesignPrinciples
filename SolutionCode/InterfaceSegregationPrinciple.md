@@ -1,0 +1,4 @@
+Interface Segregation Principle (ISP) - The principle states that a class should not be forced to implement interfaces it does not use. In other words, a class should only be required to implement the methods it needs.
+Problem:In this example, the SimpleDocument class only needs to implement the save method. But it is forced to implement the open and print methods as well, even though it doesn't use them. This violates the ISP.
+
+Solution:In this solution, we've separated the `open` and `save` methods into separate interfaces `OpenableDocument` and `SaveableDocument`. The `SimpleDocument` class only inherits from the interfaces it needs to implement, thereby adhering to the ISP.

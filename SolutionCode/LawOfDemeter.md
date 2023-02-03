@@ -1,0 +1,4 @@
+Law of Demeter (LoD) - The principle states that an object should only communicate with its immediate neighbors and should not have knowledge of the inner workings of the objects it interacts with.
+Problem:In this example, the Order class has knowledge of the inner workings of the Customer and Address classes, which violates the LoD.
+
+Solution:In this solution, the classes only communicate with their immediate neighbors, adhering to the LoD. The Order class doesn't have knowledge of the inner workings of the Customer and Address classes, as it only communicates with them through the arguments passed in during their creation.

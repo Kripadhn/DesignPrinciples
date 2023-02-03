@@ -1,0 +1,4 @@
+Single Responsibility Principle (SRP) - The principle states that every module or class should have responsibility over a single part of the functionality provided by the software, and that responsibility should be entirely encapsulated by the class.
+Problem:In this example, the Employee class has two responsibilities: calculating bonuses and saving employees to a database. This violates the SRP, as a class should only have one responsibility.
+
+Solution:In this solution, the responsibilities have been separated into two different classes, Employee and EmployeeDB. This allows each class to focus on a single responsibility, making the code more maintainable and easier to understand.
